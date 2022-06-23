@@ -151,3 +151,40 @@ class sqliteDatabase:
                 )
                 ''')
         procedure.to_sql('procedure', self.connection, if_exists='append', index=False)
+
+
+    def createPatientCareplanTable(self): 
+       
+        self.cursor.execute('''
+           CREATE TABLE IF NOT EXISTS patient_careplan (
+            careplan_id INTEGER PRIMARY KEY AUTOINCREMENT,
+			PATIENT_ID nvarchar(36),
+            CARE_TYPE nvarchar(20),
+            DESCRIPTION nvarchar(50),
+            RESON nvarchar(50),
+            ENCOUNTER nvarchar(50),
+            DATE Date,
+            foreign key(PATIENT_ID) references patient(Id) 
+			)
+             ''')
+      
+        self.cursor.execute('''
+            INSERT INTO patient_careplan(PATIENT_ID,CARE_TYPE, DESCRIPTION,RESON,ENCOUNTER,DATE)
+            SELECT patient.Id as PATIENT_ID, 'Medication' as CARE_TYPE, medication.DESCRIPTION, medication.REASONCODE as RESON, medication.ENCOUNTER, medication.START as DATE
+            FROM patient 
+            INNER JOIN 
+            medication ON patient.Id = medication.PATIENT
+    
+            UNION
+            SELECT patient.Id as PATIENT_ID,'Observation' as CARE_TYPE, observation.DESCRIPTION, observation.CODE as RESON, observation.ENCOUNTER, observation.DATE
+            FROM patient 
+            INNER JOIN 
+            observation ON patient.Id = observation.PATIENT
+            
+            UNION
+            SELECT patient.Id as PATIENT_ID, 'Procedure' as CARE_TYPE, procedure.DESCRIPTION, procedure.REASONDESCRIPTION as RESON, procedure.ENCOUNTER, procedure.DATE
+            FROM patient 
+            INNER JOIN 
+            procedure ON patient.Id = procedure.PATIENT
+            ''')
+            
