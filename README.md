@@ -3,7 +3,7 @@
 
 ## Projektbeschreibung
 
-Im Rahmen unseres Projektes analysieren wir einen Datensatz  aus den USA der Informationen über demographische und medizinische Details von 1019 Brustkrebs Patienten aus den USA enthält. Die Daten werden zum beantworten unserer Forschungsfrage verwendet *Forschungsfrage*.
+Im Rahmen unseres Projektes analysieren wir einen Datensatz  aus den USA der Informationen über demographische und medizinische Details von 1019 Brustkrebs Patienten aus den USA enthält. Die Daten werden zum beantworten unserer Forschungsfrage verwendet wie oft Patienten bei gleichen Vorraussetzungen und gesundheitlichen Konditionen andere Behandlungen und Medikamente erhalten.
 
 Eine genaue Anleitung zum klonen der Daten und des Codes und deren Ausführung auf lokalen oder cloud bassierten Systemen findet sich in [Systemumgebung](https://github.com/Fuenfgeld/DMA2022DataProjectB/wiki/Systemumgebung).
 
