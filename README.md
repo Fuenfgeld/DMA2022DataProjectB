@@ -1,5 +1,6 @@
 # DMA2022DataProjectB
 
+ToDo: Angeben wie viel % der Männer/Frauen Brustkrebs haben und auch ein zwei kurzinfos zur Erkrankung um eventuell die Auswahl zu brgründen bzw die signifikanz auszudrücken
 
 ## Projektbeschreibung
 
