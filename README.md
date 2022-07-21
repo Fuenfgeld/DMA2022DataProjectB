@@ -27,9 +27,12 @@ Die von uns generierten Daten werden auf Google Drive zur Verfügung gestellt. D
 Bei der Bearbeitung der Daten wurde das [Sternschema](https://de.wikipedia.org/wiki/Sternschema) als Datenmodell genutzt.
 Dei bearbeiteten Daten wurden in SQL-Datenbanken geladen und auf Google Drive gespeichert.
 Zur Auswertung der Daten wurde das [K-means-Verfahren](https://de.wikipedia.org/wiki/K-Means-Algorithmus) genutzt.
+Ausführlichere Informationen finden sich in den [Forschungsergebnissen] (https://github.com/Fuenfgeld/DMA2022DataProjectB/wiki/Forschungsergebnisse) und im Notebook [Analysis.ipynb](https://github.com/Fuenfgeld/DMA2022DataProjectB/blob/main/Code/Analysis.ipynb).
 
 ## Konklusion
 Die Forschungsfrage kann positiv beschieden werden. Nach Analyse der Medikamentengabe, wurde ersichtlich, dass Pateienten mit gleichem oder vergleichbarem Krankheitszustand tatsächlich die gleiche (bzw. relativ ähnliche) Medikation erhielten. Diese trifft zumindest auf Patienten mit Brustkrebserkrankungen zu.
+<br>
+<br>
 
 ![Flowchart](https://raw.githubusercontent.com/Fuenfgeld/DMA2022DataProjectB/493ea8d456411bd701861dd6dcc4463d59ee2c46/Daten_schema/Links.svg)
 ![Flowchart](https://raw.githubusercontent.com/Fuenfgeld/DMA2022DataProjectB/main/Daten_schema/Dataflowchart.png)
