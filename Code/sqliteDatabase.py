@@ -1,5 +1,13 @@
 import sqlite3
 import pandas as pd
+from google.colab import drive
+
+#Verbindung zu GoogleDrive
+drive.mount('/content/gdrive/', force_remount=True)
+
+conn = sqlite3.connect('/content/gdrive/Shareddrives/Studie Breast Cancer/BreastCancerDB.db')
+cursor = conn.cursor()
+print("Datenbank wurde erfolgreich geöffnet")
 
 class sqliteDatabase:
     
@@ -17,6 +25,7 @@ class sqliteDatabase:
     
     def createConnection(self):
         self.connection = sqlite3.connect('breast_cancer.sqlite')
+	#conn = sqlite3.connect('/content/gdrive/Shareddrives/Studie Breast Cancer/BreastCancerDB.db')
         result = self.checkConnection()
         if(not result):
             print("Datenbank wurde nicht erfolgreich geöffnet");
@@ -44,7 +53,7 @@ class sqliteDatabase:
         self.cursor.execute("DROP TABLE IF EXISTS " + tableName)
         
     def createPatientTable(self): 
-        patient = pd.read_csv('BreastCancerData/patients.csv', sep=",")
+        patient = pd.read_csv('/content/gdrive/Shareddrives/Studie Breast Cancer/breast_cancer/patients.csv', sep=",")
         self.cursor.execute('''
                 CREATE TABLE IF NOT EXISTS patient (
                     Id nvarchar(36) primary key,
@@ -79,7 +88,7 @@ class sqliteDatabase:
         return rowCountPatient
 
     def createConditionTable(self): 
-        condition = pd.read_csv('BreastCancerData/conditions.csv', sep=",")
+        condition = pd.read_csv('/content/gdrive/Shareddrives/Studie Breast Cancer/breast_cancer/conditions.csv', sep=",")
         self.cursor.execute('''
             CREATE TABLE IF NOT EXISTS condition (
                 START Date,
@@ -95,7 +104,7 @@ class sqliteDatabase:
         return rowCountCondition
 
     def createMedicationTable(self): 
-        medication = pd.read_csv('BreastCancerData/medications.csv', sep=",")
+        medication = pd.read_csv('/content/gdrive/Shareddrives/Studie Breast Cancer/breast_cancer/medications.csv', sep=",")
         self.cursor.execute('''
             CREATE TABLE IF NOT EXISTS medication (
                 START nvarchar(20),
@@ -115,11 +124,9 @@ class sqliteDatabase:
                 )
                 ''')
         medication.to_sql('medication', self.connection, if_exists='append', index=False)
-
-        
-        
+                
     def createObservationTable(self):
-        observation = pd.read_csv('BreastCancerData/observations.csv', sep=",")
+        observation = pd.read_csv('/content/gdrive/Shareddrives/Studie Breast Cancer/breast_cancer/observations.csv', sep=",")
         self.cursor.execute('''
             CREATE TABLE IF NOT EXISTS observation (
                 DATE nvarchar(20),
@@ -136,7 +143,7 @@ class sqliteDatabase:
         observation.to_sql('observation', self.connection, if_exists='append', index=False)
 
     def createProcedureTable(self): 
-        procedure = pd.read_csv('BreastCancerData/procedures.csv', sep=",")
+        procedure = pd.read_csv('/content/gdrive/Shareddrives/Studie Breast Cancer/breast_cancer/procedures.csv', sep=",")
         self.cursor.execute('''
             CREATE TABLE IF NOT EXISTS procedure (
                 DATE nvarchar(20),
@@ -173,9 +180,6 @@ class sqliteDatabase:
             FROM patient
             LEFT JOIN condition ON Id = PATIENT
             ''')
-
-
-
 
     def createPatientCareplanTable(self): 
        
