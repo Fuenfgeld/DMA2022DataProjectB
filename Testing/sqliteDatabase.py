@@ -44,7 +44,7 @@ class sqliteDatabase:
         self.cursor.execute("DROP TABLE IF EXISTS " + tableName)
         
     def createPatientTable(self): 
-        patient = pd.read_csv('/patients.csv', sep=",")
+        patient = pd.read_csv('patients.csv', sep=",")
         self.cursor.execute('''
                 CREATE TABLE IF NOT EXISTS patient (
                     Id nvarchar(36) primary key,
@@ -79,7 +79,7 @@ class sqliteDatabase:
         return rowCountPatient
 
     def createConditionTable(self): 
-        condition = pd.read_csv('/conditions.csv', sep=",")
+        condition = pd.read_csv('conditions.csv', sep=",")
         self.cursor.execute('''
             CREATE TABLE IF NOT EXISTS condition (
                 START Date,
@@ -117,7 +117,7 @@ class sqliteDatabase:
         medication.to_sql('medication', self.connection, if_exists='append', index=False)
                 
     def createObservationTable(self):
-        observation = pd.read_csv('/observations.csv', sep=",")
+        observation = pd.read_csv('observations.csv', sep=",")
         self.cursor.execute('''
             CREATE TABLE IF NOT EXISTS observation (
                 DATE nvarchar(20),
@@ -134,7 +134,7 @@ class sqliteDatabase:
         observation.to_sql('observation', self.connection, if_exists='append', index=False)
 
     def createProcedureTable(self): 
-        procedure = pd.read_csv('/procedures.csv', sep=",")
+        procedure = pd.read_csv('procedures.csv', sep=",")
         self.cursor.execute('''
             CREATE TABLE IF NOT EXISTS procedure (
                 DATE nvarchar(20),
