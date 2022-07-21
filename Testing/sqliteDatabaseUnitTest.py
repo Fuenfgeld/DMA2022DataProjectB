@@ -28,5 +28,21 @@ class unitTestingBreastCancerClass(unittest.TestCase):
         rowCountProcedureCsvData    = len(pd.read_csv('procedures.csv', sep=","))
         self.assertEqual(rowCountProcedureCsvData, rowCountProcedureTable)
     
+    def testMedicationTable(self):
+        databaseObject = database()
+        databaseObject.dropTable("medication")
+        databaseObject.createMedicationTable()
+        rowCountMedicationTable      = databaseObject.getRowCount("medication")
+        rowCountMedicationCsvData    = len(pd.read_csv('medications.csv', sep=","))
+        self.assertEqual(rowCountMedicationCsvData, rowCountMedicationTable)
+    
+    def testObservationTable(self):
+        databaseObject = database()
+        databaseObject.dropTable("observation")
+        databaseObject.createObservationTable()
+        rowCountObservationTable      = databaseObject.getRowCount("observation")
+        rowCountObservationCsvData    = len(pd.read_csv('observations.csv', sep=","))
+        self.assertEqual(rowCountObservationCsvData, rowCountObservationTable)
+    
 if __name__ == '__main__':
     unittest.main()
