@@ -2,17 +2,6 @@
 
 Brustkrebs ist eine der häufigsten Krebserkrankungen. Er macht 30 % aller Krebsfälle bei Frauen in Deutschland aus. In seltenen Fällen kann er auch Männer befallen (1 % aller Krebsfälle bei Männern).
 
-# Abhängigkeiten
-
-- Python >= 3.7
-- sqlite3 = 1.3.5
-- pandas = 1.3.5
-- matplotlib = 3.2.2
-- seaborn = 0.11.2
-- scikit-learn = 1.0.2
-- kmodes = 0.12.1
-- plotly = 5.5.0
-
 ## Projektbeschreibung
 
 Im Rahmen unseres Projektes analysieren wir einen Datensatz  aus den USA der Informationen über demographische und medizinische Details von 1019 Brustkrebs Patienten aus den USA enthält. Die Daten werden zum beantworten unserer Forschungsfrage verwendet. In der Forschungsfrage gehen wir der Frage nach, ob Patienten, die an Brustkrebs erkrankt sind und vergleichbare Krankheitszustände vorweisen, auch die gleiche Behandlung bzw. Medikation erhalten.
@@ -37,3 +26,6 @@ Die Forschungsfrage kann positiv beschieden werden. Nach Analyse der Medikamente
 ![Flowchart](https://raw.githubusercontent.com/Fuenfgeld/DMA2022DataProjectB/493ea8d456411bd701861dd6dcc4463d59ee2c46/Daten_schema/Links.svg)
 ![Flowchart](https://raw.githubusercontent.com/Fuenfgeld/DMA2022DataProjectB/main/Daten_schema/Dataflowchart.png)
  
+ ## Video
+ 
+ https://drive.google.com/drive/folders/19r3n-OIAKq-FDZ1-2eK1mm_ANkQpQPtD
