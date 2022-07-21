@@ -16,4 +16,4 @@ Eine synthetisch generierte Version der Daten die deren Struktur beibehält wird
 
 
 ## Konklusion
-![Flowchart](https://github.com/Fuenfgeld/DMA2022DataProjectB/blob/main/Daten_schema/Dataflowchart.svg)
+![Flowchart](https://raw.githubusercontent.com/Fuenfgeld/DMA2022DataProjectB/c06509bb07c10c8795e355e676ed09109fc45058/Daten_schema/Dataflowchart.svg)
