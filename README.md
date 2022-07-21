@@ -28,4 +28,4 @@ Die Forschungsfrage kann positiv beschieden werden. Nach Analyse der Medikamente
  
  ## Video
  
-https://drive.google.com/file/d/1afKM5Bh_LqKhpOoPfO0PVRCV1dRY66Hw/view?usp=sharing
+https://drive.google.com/file/d/1afKM5Bh_LqKhpOoPfO0PVRCV1dRY66Hw/view
