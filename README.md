@@ -2,6 +2,17 @@
 
 ToDo: Angeben wie viel % der Männer/Frauen Brustkrebs haben und auch ein zwei kurzinfos zur Erkrankung um eventuell die Auswahl zu brgründen bzw die signifikanz auszudrücken
 
+# Abhängigkeiten
+
+- Python >= 3.7
+- sqlite3 = 1.3.5
+- pandas = 1.3.5
+- matplotlib = 3.2.2
+- seaborn = 0.11.2
+- scikit-learn = 1.0.2
+- kmodes = 0.12.1
+- plotly = 5.5.0
+
 ## Projektbeschreibung
 
 Im Rahmen unseres Projektes analysieren wir einen Datensatz  aus den USA der Informationen über demographische und medizinische Details von 1019 Brustkrebs Patienten aus den USA enthält. Die Daten werden zum beantworten unserer Forschungsfrage verwendet wie oft Patienten bei gleichen Vorraussetzungen und gesundheitlichen Konditionen andere Behandlungen und Medikamente erhalten.
