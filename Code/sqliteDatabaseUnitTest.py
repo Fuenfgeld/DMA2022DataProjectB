@@ -9,7 +9,7 @@ class unitTestingBreastCancerClass(unittest.TestCase):
         databaseObject.dropTable("patient")
         databaseObject.createPatientTable()
         rowCountPatientTable = databaseObject.getRowCount("patient")
-        rowCountPatientCsvData = len(pd.read_csv('BreastCancerData/patients.csv', sep=","))
+        rowCountPatientCsvData = len(pd.read_csv('/content/gdrive/Shareddrives/Studie Breast Cancer/breast_cancer/patients.csv', sep=","))
         self.assertEqual(rowCountPatientTable, rowCountPatientCsvData)
         
     def testConditionTable(self):
@@ -17,7 +17,7 @@ class unitTestingBreastCancerClass(unittest.TestCase):
         databaseObject.dropTable("condition")
         databaseObject.createConditionTable()
         rowCountConditionTable = databaseObject.getRowCount("condition")
-        rowCountConditionCsvData = len(pd.read_csv('BreastCancerData/conditions.csv', sep=","))
+        rowCountConditionCsvData = len(pd.read_csv('/content/gdrive/Shareddrives/Studie Breast Cancer/breast_cancer/conditions.csv', sep=","))
         self.assertEqual(rowCountConditionTable, rowCountConditionCsvData)
     
     def testProcedureTable(self):
@@ -25,7 +25,7 @@ class unitTestingBreastCancerClass(unittest.TestCase):
         databaseObject.dropTable("procedure")
         databaseObject.createProcedureTable()
         rowCountProcedureTable      = databaseObject.getRowCount("procedure")
-        rowCountProcedureCsvData    = len(pd.read_csv('BreastCancerData/procedures.csv', sep=","))
+        rowCountProcedureCsvData    = len(pd.read_csv('/content/gdrive/Shareddrives/Studie Breast Cancer/breast_cancer/procedures.csv', sep=","))
         self.assertEqual(rowCountProcedureCsvData, rowCountProcedureTable)
     
 if __name__ == '__main__':
