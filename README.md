@@ -20,3 +20,6 @@ Eine synthetisch generierte Version der Daten die deren Struktur beibehält wird
 
 ## Datenflussdiagramm
 ![Flowchart](https://user-images.githubusercontent.com/28505637/179404606-d0eda826-9c60-4a3e-95a7-958dcb915cea.svg)
+
+
+![Flowchart](https://github.com/Fuenfgeld/DMA2022DataProjectB/blob/main/Daten_schema/Dataflowchart.svg)
