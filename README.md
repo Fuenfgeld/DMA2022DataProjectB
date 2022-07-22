@@ -29,3 +29,6 @@ Die Forschungsfrage kann positiv beschieden werden. Nach Analyse der Medikamente
  ## Video
  
 https://drive.google.com/file/d/1afKM5Bh_LqKhpOoPfO0PVRCV1dRY66Hw/view
+
+
+### Disclaimer: In dem Projekt wurden synthetische Daten verwendet. Keine echten Patienten Data (siehe https://github.com/synthetichealth/synthea) ![image](https://user-images.githubusercontent.com/32547123/180417555-d8273ff9-efbb-43f1-9e4d-cfee5d89be52.png)
