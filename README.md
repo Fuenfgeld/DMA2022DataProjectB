@@ -26,9 +26,9 @@ Die Forschungsfrage kann positiv beschieden werden. Nach Analyse der Medikamente
 ![Flowchart](https://raw.githubusercontent.com/Fuenfgeld/DMA2022DataProjectB/493ea8d456411bd701861dd6dcc4463d59ee2c46/Daten_schema/Links.svg)
 ![Flowchart](https://raw.githubusercontent.com/Fuenfgeld/DMA2022DataProjectB/main/Daten_schema/Dataflowchart.png)
  
- ## Video
- 
-https://drive.google.com/file/d/1afKM5Bh_LqKhpOoPfO0PVRCV1dRY66Hw/view
+### Projekt Video
+[![Watch the video](https://img.youtube.com/vi/JhvHeFUmNb8/maxresdefault.jpg)](https://youtu.be/JhvHeFUmNb8)
+https://youtu.be/JhvHeFUmNb8
 
 
 ### Disclaimer: In dem Projekt wurden synthetische Daten verwendet. Keine echten Patienten Data (siehe https://github.com/synthetichealth/synthea) ![image](https://user-images.githubusercontent.com/32547123/180417555-d8273ff9-efbb-43f1-9e4d-cfee5d89be52.png)
